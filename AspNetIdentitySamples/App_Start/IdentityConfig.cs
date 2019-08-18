@@ -204,4 +204,13 @@ namespace IdentitySample.Models
         }
 
     }
+
+    public class ApplicationRoleStore : RoleStore<IdentityRole>
+    {
+        public ApplicationRoleStore(ApplicationDbContext context)
+        : base(context)
+        {
+        }
+
+    }
 }
